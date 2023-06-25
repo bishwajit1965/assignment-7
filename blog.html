@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"]
+            }
+          }
+        }
+      };
+    </script>
+    <style>
+      .bullet-syle {
+        background-color: aqua;
+        border-radius: 100%;
+        padding: 0.2rem 0.45rem;
+        margin-right: 0.6rem;
+        box-shadow: 0.1rem 0.2rem 0.3em 0.1rem #ddd;
+        border: 0.1rem solid #0bc0c0;
+      }
+      .paragraph-style {
+        margin-bottom: 1rem;
+      }
+      .text-color-red {
+        color: #ff0000;
+        font-weight: 500;
+      }
+      .text-color-green {
+        color: #05d331;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header begins -->
+    <header class="h-16 flex items-center shadow-sm">
+      <nav class="flex justify-between items-center w-9/12 mx-auto">
+        <div class="text-zinc-800 font-bold uppercase">
+          <h1 class="text-lg">Blog <span class="text-green-700">HERO</span></h1>
+        </div>
+        <a
+          href="./index.html"
+          target="_blank"
+          class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+          ><i class="fa fa-home"></i>
+          Home
+        </a>
+      </nav>
+    </header>
+    <!-- ./Header ends -->
+    <main>
+      <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto">
+        <article class="mt-10 border-l-4 border-l-amber-500 pl-8">
+          <h1 class="from-orange-600 text-2xl mb-6">
+            <span class="font-bold">Question: 1.</span> Differences between
+            map(), filter(), forEach() and find().
+          </h1>
+          <p class="paragraph-style">
+            <span class="font-bold">Answer: definition and usage:</span>
+          </p>
+
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+
+            <span class="font-bold">map():</span>
+            does a wonder by creating a new array from calling a callback
+            function provided for every array element that it operates upon.
+          </p>
+
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">map():</span>
+            calls a callback function provided once for each of the array
+            elemnts it is operating upon.
+          </p>
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">map():</span>
+            does not execute the callback function provided on an empty array
+            elements.
+          </p>
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">map():</span>
+            does not change the origunal array it is operating upon.
+          </p>
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">map() Syntax:</span>
+            array.map(function(currentValue, index, arr), thisValue). Here
+            <span class="text-color-red">function()</span> is required,
+            <span class="text-color-red">currentValue </span> is required,
+            <span class="text-color-green">index</span> and
+            <span class="text-color-green">arr</span> are optional. By default
+            thisValue is undefined. If a value is passed it works as its
+            <span class="text-color">this</span> value actually.
+          </p>
+          <br />
+
+          <!-- filter() begins -->
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">filter():</span>
+            Filter mthod crates a new array with elements that pass the test
+            provided by the function.
+          </p>
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">filter():</span>
+            Filter mthod does not execute on empty array elements.
+          </p>
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">filter():</span>
+            Filter mthod does not change the original array.
+          </p>
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">filter() Syntax:</span>
+            array.filter(function(currentValue, index, arr), thisValue). Here
+            <span class="text-color-red">function()</span> is required,
+            <span class="text-color-red">currentValue </span> is required,
+            <span class="text-color-green">index</span> and
+            <span class="text-color-green">arr</span> are optional. By default
+            thisValue is undefined. If a value is passed it works as its
+            <span class="text-color">this</span> value actually.
+          </p>
+          <br />
+          <!-- ./Filter ends -->
+
+          <!-- forEach() begins -->
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">forEach():</span>
+            forEach() mthod calls a function for each element in the array it
+            operates upon.
+          </p>
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">forEach():</span>
+            forEach() mthod does not execute on empty array elements.
+          </p>
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">forEachforEach():</span>
+            forEach() mthod does not return anythig. It means the return value
+            is undefined.
+          </p>
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">forEach() Syntax:</span>
+            array.forEach(function(currentValue, index, arr), thisValue). Here
+            <span class="text-color-red">function()</span> is required,
+            <span class="text-color-red">currentValue </span> is required,
+            <span class="text-color-green">index</span> and
+            <span class="text-color-green">arr</span> are optional. By default
+            thisValue is undefined. If a value is passed it works as its
+            <span class="text-color">this</span> value actually.
+          </p>
+          <br />
+          <!-- ./forEach() ends -->
+
+          <!-- find() begins -->
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">find():</span>
+            find() method returns the first value of the element that passes the
+            test.
+          </p>
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">find():</span>
+            find() mthod executes a callback function on each array elements.
+          </p>
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">find():</span>
+            find() mthod does not execute the callback funtion for empty
+            elemnts.
+          </p>
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">find():</span>
+            find() mthod does not change the original array it operates upon.
+          </p>
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">find() Syntax:</span>
+            array.find(function(currentValue, index, arr),thisValue). Here
+            <span class="text-color-red">function()</span> is required,
+            <span class="text-color-red">currentValue </span> is required,
+            <span class="text-color-green">index</span> and
+            <span class="text-color-green">arr</span> are optional. By default
+            thisValue is undefined. If a value is passed it works as its
+            <span class="text-color">this</span> value actually.
+          </p>
+          <br />
+          <!-- find() ends -->
+        </article>
+
+        <!-- Local storage, session and cookie begins -->
+        <article class="mt-10 border-l-4 border-l-amber-500 pl-8">
+          <h1 class="from-orange-600 text-2xl mb-6">
+            <span class="font-bold">Question: 2.</span> Differences between
+            localStorage, sessionStorage and cookie.
+          </h1>
+          <p class="paragraph-style">
+            <span class="font-bold">Answer: definition and usage:</span>
+          </p>
+
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">localStorage:</span>
+            is a browser object. It allows to save data in key/value pairs in
+            json format in browser.
+          </p>
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">localStorage:</span>
+            data is not time or condition bound. The memory is not volatile.
+            Data is available irrespective of the opening and closing of the
+            browser in whch data is stored. This data is browser specific.
+          </p>
+          <br />
+
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">sessionStorage:</span>
+            is a browser object. It allows to save data in key/value pairs in
+            json format in browser. But unlike localStorage session storage data
+            is volatile. Closing the browser or signing out from the browser
+            removes all data stored in session storage. To be speciffic
+            expiration of a certain session means the expiration of the data
+            from the session storage.Data stored here is also browser and
+            session specific.
+          </p>
+          <br />
+
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">cookie:</span>
+            Cookie is a machenism of storing user information in web pages. It
+            keeps track of the data of the user for recognizing his/her
+            information for future as session data is session specific and
+            expires with the expiration of the user sesssion.
+          </p>
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">cookie:</span>
+            Cookie data is stored in small text files in the computer of the
+            user. When a connection is cut off from the server forgets
+            everything about the user. Cookie solves this problem of remembering
+            the user in future. On browser request for a web page from specific
+            server, cookie related to that page are added with the server
+            request and thus the ueser is recognized from the previously saved
+            cookie value.
+          </p>
+        </article>
+        <!-- Local storage, session and cookie ends -->
+
+        <!-- Event loop begins -->
+        <article class="mt-10 border-l-4 border-l-amber-500 pl-8">
+          <h1 class="from-orange-600 text-2xl mb-6">
+            <span class="font-bold">Question: 3.</span> Event loop.
+          </h1>
+          <p class="paragraph-style">
+            <span class="font-bold">Answer: definition and usage:</span>
+          </p>
+
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">Event loop:</span>
+          </p>
+          <img src="./images/images.png" alt="Event loop" class="w-2/4" />
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">Event loop:</span> manages synchronous and
+            asynchronous using callstack and queue. Event loop is a jasaScript
+            run time model which executes the code. It collects, processes
+            events and executes those events in queued sub tasks.
+          </p>
+          <p class="font-bold ml-10">Heap/Stack:</p>
+          <p class="ml-10">
+            In event looping objects are allocated in a heap of unstructured
+            large memory which is called heap / stack.
+          </p>
+          <p class="font-bold ml-10">Queue:</p>
+          <p class="ml-10">
+            A message queue is maintained in javaScript which contains the the
+            list of messages to be processed associated with a function of its
+            own to be cllled for message handling in order. In event looping at
+            some point the javascript runtime starts message handling from the
+            queue in the oldest message order. While doing so the message gets
+            removed from the queue and the corresponding function is called with
+            the message as an input parameter. Thus a function creates a stack
+            or heap frame new for the use of that function and this process
+            continues until the stack is empty and the event loop waits for the
+            new message to processed in queue. FIFO (first in first out )
+            principle is maintained here in event loop.
+          </p>
+        </article>
+        <!-- ./Event loop ends -->
+
+        <!-- QuizTime() functionality begins-->
+        <article class="mt-10 border-l-4 border-l-amber-500 pl-8">
+          <h1 class="from-orange-600 text-2xl mb-6">
+            <span class="font-bold">QuizTimer()</span> Functionality:
+          </h1>
+          <p class="paragraph-style">
+            <span class="font-bold">Answer: usage:</span>
+          </p>
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">quizTimer():</span> function tracks a time
+            span of one minute to answer 6 questions. If the time consumed is
+            more than a minute it warns by changing the color of timer in the UI
+            and contiues toggling the color as a warning of expired time. It
+            converts counter seconds to minute and when the time is up it goes
+            on toggling the color on the basis of modulous value even and odd.
+          </p>
+        </article>
+        <!-- ./QuizTime() functionality ends-->
+
+        <!-- ChooseQuiz functionality begins -->
+        <article class="mt-10 border-l-4 border-l-amber-500 pl-8">
+          <h1 class="from-orange-600 text-2xl mb-6">
+            <span class="font-bold">ChooseQuiz()</span> Functionality:
+          </h1>
+          <p class="paragraph-style">
+            <span class="font-bold">Answer: usage:</span>
+          </p>
+
+          <p class="paragraph-style">
+            <span class="bullet-syle">&#x2713;</span>
+            <span class="font-bold">chooseQuiz():</span> function loops through
+            the given answers and matches answers with respective answers
+            provided in quiz data API and if found displays the answers in the
+            UI.
+          </p>
+        </article>
+        <!-- ./ChooseQuiz functionality ends -->
+      </section>
+    </main>
+    <br />
+    <hr />
+    <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm">
+      Copyright © 2023 Quiz Hero All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
+  </body>
+</html>
